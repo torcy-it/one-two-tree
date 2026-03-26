@@ -59,6 +59,40 @@ a:hover {
     color: #B4FFD2;
 }
 
+.pixel-btn {
+    display: block;
+    text-align: center;
+    background-color: #DA00CE; /* Magenta primario */
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 30px auto;
+    font-size: 12px;
+    
+    /* MODIFICHE PER LA LARGHEZZA UGUALE */
+    width: 250px; /* Puoi aumentare o diminuire questo numero a piacimento */
+    box-sizing: border-box; /* Mantiene perfette le proporzioni coi bordi */
+    
+    /* Effetto 3D chunk: chiaro sopra/sinistra, scuro sotto/destra */
+    border-top: 4px solid #FA73FB;
+    border-left: 4px solid #FA73FB;
+    border-bottom: 4px solid #86007E;
+    border-right: 4px solid #86007E;
+    
+    /* Nessun raggio di curvatura per mantenere l'aspetto squadrato */
+    border-radius: 0; 
+}
+
+/* Effetto quando si clicca il bottone (si inverte l'ombra) */
+.pixel-btn:active {
+    border-top: 4px solid #86007E;
+    border-left: 4px solid #86007E;
+    border-bottom: 4px solid #FA73FB;
+    border-right: 4px solid #FA73FB;
+}
+
+
 /* --- BOTTONI PIXEL 3D --- */
 .pixel-btn.btn-yellow {
     background-color: #D1D326; /* Giallo/limone primario */
@@ -79,32 +113,3 @@ a:hover {
     border-right-color: #E6E85C;
 }
 
-.pixel-btn {
-    display: block;
-    text-align: center;
-    background-color: #DA00CE; /* Magenta primario */
-    color: white !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 20px;
-    margin: 30px auto;
-    font-size: 12px;
-    width: fit-content;
-    
-    /* Effetto 3D chunk: chiaro sopra/sinistra, scuro sotto/destra */
-    border-top: 4px solid #FA73FB;
-    border-left: 4px solid #FA73FB;
-    border-bottom: 4px solid #86007E;
-    border-right: 4px solid #86007E;
-    
-    /* Nessun raggio di curvatura per mantenere l'aspetto squadrato */
-    border-radius: 0; 
-}
-
-/* Effetto quando si clicca il bottone (si inverte l'ombra) */
-.pixel-btn:active {
-    border-top: 4px solid #86007E;
-    border-left: 4px solid #86007E;
-    border-bottom: 4px solid #FA73FB;
-    border-right: 4px solid #FA73FB;
-}
