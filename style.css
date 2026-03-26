@@ -60,6 +60,25 @@ a:hover {
 }
 
 /* --- BOTTONI PIXEL 3D --- */
+.pixel-btn.btn-yellow {
+    background-color: #D1D326; /* Giallo/limone primario */
+    color: #000000 !important; /* Testo nero per massimo contrasto sul giallo */
+    
+    /* Effetto 3D con i gialli della tua palette */
+    border-top-color: #E6E85C; /* Giallo highlight (leggermente più chiaro del primario) */
+    border-left-color: #E6E85C;
+    border-bottom-color: #B3B51F; /* Giallo scuro per l'ombra */
+    border-right-color: #B3B51F;
+}
+
+/* Effetto quando si clicca il bottone giallo (inversione ombre) */
+.pixel-btn.btn-yellow:active {
+    border-top-color: #B3B51F;
+    border-left-color: #B3B51F;
+    border-bottom-color: #E6E85C;
+    border-right-color: #E6E85C;
+}
+
 .pixel-btn {
     display: block;
     text-align: center;
