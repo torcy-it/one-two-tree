@@ -70,9 +70,9 @@ a:hover {
     margin: 30px auto;
     font-size: 12px;
     
-    /* MODIFICHE PER LA LARGHEZZA UGUALE */
-    width: 250px; /* Puoi aumentare o diminuire questo numero a piacimento */
-    box-sizing: border-box; /* Mantiene perfette le proporzioni coi bordi */
+
+    width: 250px; 
+    box-sizing: border-box; 
     
     /* Effetto 3D chunk: chiaro sopra/sinistra, scuro sotto/destra */
     border-top: 4px solid #FA73FB;
@@ -97,6 +97,10 @@ a:hover {
 .pixel-btn.btn-yellow {
     background-color: #D1D326; /* Giallo/limone primario */
     color: #000000 !important; /* Testo nero per massimo contrasto sul giallo */
+
+    /* MODIFICHE PER LA LARGHEZZA UGUALE */
+    width: 250px; /* Puoi aumentare o diminuire questo numero a piacimento */
+    box-sizing: border-box; /* Mantiene perfette le proporzioni coi bordi */
     
     /* Effetto 3D con i gialli della tua palette */
     border-top-color: #E6E85C; /* Giallo highlight (leggermente più chiaro del primario) */
